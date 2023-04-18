@@ -84,6 +84,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition-property: border-color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients:hover,
@@ -164,26 +167,14 @@ div.social-media-foot ul {
   border-radius: 4px;
   border: 2px solid #f5f4fa;
   padding: 6px 22px;
+  transition-property: background-color, color, border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.filter-button:active {
-  background: var(--hover-color);
-  color: #ffffff;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
-    drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  border-color: var(--hover-color);
-}
-
+.filter-button:hover,
 .filter-button:focus {
-  background: var(--hover-color);
-  color: #ffffff;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
-    drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  border-color: var(--hover-color);
-}
-
-.filter-button:hover {
-  background: var(--hover-color);
+  background-color: var(--hover-color);
   color: #ffffff;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
     drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -295,6 +286,9 @@ img {
   text-decoration: none;
   display: flex;
   align-items: center;
+  transition-property: color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-header:hover svg use,
@@ -317,6 +311,9 @@ img {
   line-height: 1.1;
   color: #212121;
   text-decoration: none;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .list.navigation li a[class="portfolio-active"],
@@ -367,6 +364,9 @@ img {
   fill: #757575;
   margin-right: 10px;
   display: block;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .main-heading {
@@ -398,8 +398,12 @@ img {
 }
 
 .phone-icon {
+  fill: #757575;
   margin-right: 10px;
   display: block;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .projects {
@@ -417,6 +421,11 @@ img {
   border-right: 1px solid #eeeeee;
 }
 
+.projects-card {
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 .projects-card:hover,
 .projects-card:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -455,6 +464,9 @@ img {
   border-radius: 50%;
   fill: #afb1b8;
   display: block;
+  transition-property: background-color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-container-foot {
@@ -463,6 +475,9 @@ img {
   fill: #fff;
   background-color: rgba(255, 255, 255, 0.1);
   display: block;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-container-foot:hover,
