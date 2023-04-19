@@ -20,14 +20,15 @@ a.contact-links-footer[href="mailto:info@example.com"] {
 }
 
 .backdrop {
-  width: 100%;
-  height: 1024px;
   background-color: rgba(0, 0, 0, 0.2);
-  position: absolute;
+  position: fixed;
   top: 0;
+  right: 0;
+  bottom: 0;
   left: 0;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .background-dark {
@@ -260,6 +261,13 @@ img {
   pointer-events: none;
   visibility: hidden;
   opacity: 0;
+  transition-property: opacity, visibility;
+  transition-delay: 1s;
+  transition-delay: 1s;
+}
+
+.is-hidden .modal {
+  animation: modalClose 1s;
 }
 
 .john-doe {
@@ -388,8 +396,9 @@ img {
   width: 528px;
   height: 581px;
   position: absolute;
-  top: 221px;
+  top: auto;
   left: auto;
+  animation: modalOpen 1s;
 }
 
 .navigation {
@@ -545,4 +554,24 @@ ul.list.lorem-list li p {
   line-height: 1.2;
   text-decoration: none;
   margin-bottom: 20px;
+}
+
+@keyframes modalOpen {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes modalClose {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(0);
+  }
 }
