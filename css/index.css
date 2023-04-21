@@ -33,6 +33,21 @@ a.contact-links-footer[href="mailto:info@example.com"] {
   bottom: 0;
 }
 
+.agency-active {
+  position: relative;
+}
+
+.agency-active::after {
+  content: "";
+  background-color: var(--hover-color);
+  width: 51px;
+  height: 4px;
+  border-radius: 2px;
+  position: absolute;
+  top: 44px;
+  display: block;
+}
+
 .backdrop {
   background-color: rgba(0, 0, 0, 0.2);
   position: fixed;
@@ -342,6 +357,12 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.list.navigation li {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
 .list.navigation li a[class="portfolio-active"],
 .list.navigation li a[class="agency-active"] {
   color: var(--hover-color);
@@ -431,6 +452,21 @@ img {
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-active {
+  position: relative;
+}
+
+.portfolio-active::after {
+  content: "";
+  background-color: var(--hover-color);
+  width: 55px;
+  height: 4px;
+  border-radius: 2px;
+  position: absolute;
+  top: 44px;
+  display: block;
 }
 
 .projects {
