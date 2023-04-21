@@ -19,6 +19,20 @@ a.contact-links-footer[href="mailto:info@example.com"] {
   flex-direction: column;
 }
 
+.activity-description {
+  width: 370px;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  line-height: 1.1;
+  padding: 27px 0;
+  position: absolute;
+  bottom: 0;
+}
+
 .backdrop {
   background-color: rgba(0, 0, 0, 0.2);
   position: fixed;
@@ -136,6 +150,10 @@ body {
 
 div.container.section.activity ul {
   flex-wrap: wrap;
+}
+
+div.container.section.activity.top-padding-none li {
+  position: relative;
 }
 
 div.social-media ul {
